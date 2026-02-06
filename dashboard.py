@@ -678,4 +678,6 @@ if __name__ == '__main__':
     print("\n⌨️  Appuyez sur Ctrl+C pour arrêter le serveur")
     print("="*70 + "\n")
     
-    app.run(debug=True, host='0.0.0.0', port=8050)
+    import os
+    port = int(os.environ.get("PORT", 8050))
+    app.run_server(debug=True, host='0.0.0.0', port=port)
