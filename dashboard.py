@@ -97,6 +97,7 @@ if df is None or len(df) == 0:
 
 app = Dash(__name__)
 app.title = "Dashboard Maladies Animales"
+server = app.server
 
 # CSS personnalisé pour le responsive
 app.index_string = '''
